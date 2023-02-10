@@ -1,0 +1,19 @@
+@use "./config";
+@use "./header";
+@use "./form";
+@use "./footer";
+@use "./responsive";
+
+.wrapper {
+  background-color: var(--color-background-black);
+
+  &::before {
+    content: "";
+    background: url("../img/background.jpg") no-repeat center / cover;
+    filter: blur(2px);
+    height: 100%;
+    position: fixed;
+    width: 100%;
+    z-index: -1;
+  }
+}

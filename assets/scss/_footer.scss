@@ -1,0 +1,15 @@
+.footer {
+  background: linear-gradient(180deg, transparent 50%, var(--color-form-black-alpha));
+  font-style: italic;
+  font-size: .8rem;
+  padding: 2rem 0;
+  text-align: center;
+
+  &__link {
+    text-decoration: none;
+
+    &:hover {
+      text-decoration: underline var(--color-blackmesa-orange) solid 1px;
+    }
+  }
+}

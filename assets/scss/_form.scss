@@ -1,0 +1,89 @@
+.form {
+  background-color: var(--color-form-black-alpha);
+  border-radius: 0;
+  margin: 0 auto;
+  max-width: 50rem;
+  padding: 1.5rem;
+  width: 100%;
+
+  &__fields {
+    border: none;
+    margin-bottom: 1.5rem;
+
+    &:not(:last-of-type) {
+      border-bottom: 1px solid var(--color-grey-lines);
+      padding-bottom: 1.5rem;
+    }
+  }
+
+  &__group {
+    margin-top: .5rem;
+  }
+  
+  &__label {
+    font-size: 1.25rem;
+  }
+
+  &__element {
+    border: 1px solid var(--color-background-black);
+    color: var(--color-pure-black);
+    font-size: 1rem;
+    min-height: 2rem;
+    padding: .5rem;
+    width: 100%;
+
+    &--typable, &--selectable {
+      margin: .5rem 0 1.25rem;
+    }
+
+    &--tickable {
+      min-height: 1.25rem;
+      width: 1rem;
+    }
+  }
+
+  #area {
+    margin-bottom: 0;
+  }
+  
+  &__message {
+    height: 5rem;
+    resize: none;
+  }
+  
+  &__submit {
+    background-color: transparent;
+    border: 1px solid var(--color-blackmesa-orange);
+    color: var(--color-blackmesa-orange);
+    cursor: pointer;
+    display: block;
+    font-size: 1.25rem;
+    margin: 0 auto;
+    overflow: hidden;
+    position: relative;
+    transition: color .10s;
+    width: 100%;
+    z-index: 1;
+
+    &:hover {
+      color: var(--color-soft-white);
+    }
+    
+    &::after {
+      background-color: var(--color-blackmesa-orange);
+      content: "";
+      display: block;
+      height: 100%;
+      position: absolute;
+      transform: skew(-35deg) translate(-150%);
+      transition: transform .25s ease-out;
+      top: 0;
+      width: 120%;
+      z-index: -1;
+    }
+    
+    &:hover::after {
+      transform: skew(-35deg) translate(-10%);
+    }
+  }
+}

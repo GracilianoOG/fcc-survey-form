@@ -1,0 +1,36 @@
+$media-s: 36rem;
+$media-m: 48rem;
+$width-s: 90%;
+$width-m: 80%;
+
+@media screen and (min-width: $media-s) {
+  .header {
+    padding: 2rem 0 3rem;
+    width: $width-s;
+  }
+
+  .main-heading {
+    font-size: 2rem;
+  }
+
+  .form {
+    border-radius: 1rem;
+    padding: 3rem;
+    width: $width-s;
+
+    &__submit {
+      width: 50%;
+    }
+  }
+}
+
+@media screen and (min-width: $media-m) {
+  .header {
+    flex-direction: row;
+    width: $width-m;
+  }
+
+  .form {
+    width: $width-m;
+  }
+}

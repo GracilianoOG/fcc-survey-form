@@ -1,0 +1,43 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+
+  &:focus {
+    outline: 3px dotted var(--color-blackmesa-orange);
+    outline-offset: 1px;
+  }
+}
+
+:root {
+  --color-pure-black: #000000;
+  --color-background-black: #171717;
+  --color-form-black: #141414;
+  --color-form-black-alpha: #141414F5;
+  --color-soft-white: #FAFAFA;
+  --color-blackmesa-orange: #E37226;
+  --color-grey-lines: #B1B1B1;
+  --font-main: Arial, Helvetica, sans-serif;
+}
+
+h1, h2, p, a, label, input, select {
+  color: var(--color-soft-white);
+  font-family: var(--font-main);
+}
+
+.main-heading {
+  font: 700 1.5rem var(--font-main);
+}
+
+.sub-heading {
+  font: 500 1.25rem var(--font-main);
+}
+
+.text-shadow {
+  text-shadow: 1px 1px 5px var(--color-pure-black);
+}
+
+.highlight {
+  color: var(--color-blackmesa-orange);
+  font-weight: 700;
+}

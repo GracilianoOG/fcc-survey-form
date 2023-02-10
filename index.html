@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/main.css">
+    <link rel="shortcut icon" href="./assets/img/logo.svg" type="image/x-icon">
+    <title>Black Mesa Survey</title>
+  </head>
+  <body class="wrapper">
+    <header class="header">
+      <figure>
+        <a href="./index.html"><img class="header__image" src="./assets/img/logo.svg" alt=""></a>
+      </figure>
+      <div>
+        <h1 id="title" class="header__title main-heading text-shadow"><span class="highlight">Black Mesa</span> Employment</h1>
+        <p id="description" class="header__description text-shadow">The Black Mesa Research Facility is an <span class="highlight">equal opportunity</span> employer.</p>
+      </div>
+    </header>
+    <main>
+      <form id="survey-form" class="form">
+        <fieldset class="form__fields">
+          <label for="name" id="name-label" class="form__label">Name</label>
+          <input id="name" name="name" class="form__element form__element--typable" placeholder="Type your name" type="text" required>
+          <label for="email" id="email-label" class="form__label">Email</label>
+          <input id="email" name="email" class="form__element form__element--typable" placeholder="Type your email" type="email" required>
+          <label for="age" id="age-label" class="form__label">Age (optional)</label>
+          <input id="age" min="18" max="120" name="age" class="form__element form__element--typable" placeholder="Age" type="number">
+          <label for="area" class="form__label">Choose your area of ​​interest</label>
+          <select id="area" name="area" class="form__element form__element--selectable" required>
+            <option disabled selected value="">(It's time to choose)</option>
+            <option value="1">Materials Handling</option>
+            <option value="2">Low-Clearance Security</option>
+            <option value="3">Theoretical Physics</option>
+            <option value="4">Biotechnology</option>
+          </select>
+        </fieldset>
+        <fieldset class="form__fields">
+          <h2 class="sub-heading">How did you find out about the hire?</h2>
+          <div class="form__group">
+            <input id="indication-friends" name="indication" class="form__element form__element--tickable" type="radio" value="friends" checked>
+            <label for="indication-friends" class="form__label">Friends at Black Mesa</label>
+          </div>
+          <div class="form__group">
+            <input id="indication-family" name="indication" class="form__element form__element--tickable" type="radio" value="family">
+            <label for="indication-family" class="form__label">Family Members</label>
+          </div>
+          <div class="form__group">
+            <input id="indication-other" name="indication" class="form__element form__element--tickable" type="radio" value="other">
+            <label for="indication-other" class="form__label">Other</label>
+          </div>
+        </fieldset class="form__fields">
+        <fieldset class="form__fields">
+          <h2 class="sub-heading">Have you worked for any of these companies before?</h2>
+          <div class="form__group">
+            <input id="company-aperture" name="company" class="form__element form__element--tickable" type="checkbox" value="aperture">
+            <label for="company-aperture" class="form__label">Aperture Science</label>
+          </div>
+          <div class="form__group">
+            <input id="company-arbeit" name="company" class="form__element form__element--tickable" type="checkbox" value="arbeit">
+            <label for="company-arbeit" class="form__label">Arbeit Communications</label>
+          </div>
+          <div class="form__group">
+            <input id="company-valve" name="company" class="form__element form__element--tickable" type="checkbox" value="valve">
+            <label for="company-valve" class="form__label">Valve Software</label>
+          </div>
+        </fieldset>
+        <fieldset class="form__fields">
+          <label for="message" class="form__label">Send us a message</label>
+          <textarea id="message" name="message" class="form__message form__element form__element--typable" maxlength="255"></textarea>
+        </fieldset>
+        <!-- <input id="submit" class="form__submit form__element" type="submit" value="Submit"> -->
+        <button id="submit" class="form__submit form__element" type="submit">Submit</button>
+      </form>
+    </main>
+    <footer class="footer">
+      <p>Coded by <a href="https://github.com/GracilianoOG" class="footer__link"><span class="highlight">Gabriel</span></a>. Challenge by <a href="https://www.freecodecamp.org/" class="footer__link"><span class="highlight">FreeCodeCamp</span></a>.</p>
+    </footer>
+  </body>
+</html>

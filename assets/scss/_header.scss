@@ -1,0 +1,25 @@
+.header {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem 4.25rem;
+  justify-content: center;
+  margin: 0 auto;
+  padding: 2rem 1.5rem 3rem;
+  text-align: center;
+  width: 100%;
+
+  &__image {
+    display: block;
+    width: 10.375rem;
+  }
+  
+  &__title {
+    margin-bottom: 1rem;
+  }
+  
+  &__description {
+    font: 500 1.2rem var(--font-main);
+    max-width: 24rem;
+  }
+}
